@@ -1,25 +1,35 @@
 <html>
     <head>
      <link rel="stylesheet" href="project.css" type="text/css">
+     <style>
+        table{
+            background-color:aqua;
+        }
+        .txt{
+            font:red bold;
+        }
+        
+     </style>
     </head>
-    <body class="bg2">
-    
-    <form class="cen1">
+    <body>
+    <center>
+    <form>
         <table>
         <tr>
-            <td>
+            <td class="txt">
             User Name
             </td>    
             <td>
-                <input type="text" placeholder="User Name">
+                <input type="text" placeholder="User Name" name="name">
             </td>
             </tr>
+        
         <tr>
-            <td>
+            <td class="txt">
             Password
             </td>
             <td>
-            <input type="password" >
+            <input type="password" name="pass" >
             
             </td>
             </tr>
@@ -27,23 +37,25 @@
         <tr>
             
             <td colspan="2" align="center">
-            <input type="button" Value ="Sign In">
+            <input type="button" Value ="Sign In" Onclick="check()">
                 </td>
 
             </tr>
-        
-        
-        
         </table>
-        
-        
-        
-        
         </form>
-    
-    
+    </center>
     </body>
-
+    <script>
+        var n="Hussein";
+        var p="123456"
+        function check(){
+            if (pass.text==pass&&name.text==n){
+                document.write("successfully loged in");
+            }else{
+                document.write("user name or password wrong");
+            }
+        }
+    </script>
 
 
 
